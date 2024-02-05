@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--image dans la bulle du navigateur a coter du titre (en haut)-->
+    <link rel="icon" href="./SiteDWWM/Images/favicon.ico" />
+    <title>Afpa : Contactez-nous</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="SiteDWWM/Images/logo.jpeg" alt=""></a>
+
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="temoignages.html">Témoignages</a></li>
+            <li><a href="references.html">Références</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+    </header>
+
+
+
+
+
+
+
+    <h1>Formulaire de contact</h1>
+
+    <form id="formulaire" method="post" action="http://fbrc.esy.es/reponse.php">
+        <label for="nom">Nom*</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="mail">Email*</label>
+        <input type="email" id="mail" name="mail" required><br>
+
+        <label for="tel">N° de téléphone</label>
+        <input type="tel" id="tel" name="tel">
+
+
+        <!--choix en checbox-->
+        <h3>Votre situation personnelle : </h3>
+        <input type="checkbox" id="demandeur" name="situation" value="demandeur d'emploi" />
+        <label for="demandeur">Demandeur d'emploi</label><br>
+
+        <input type="checkbox" id="salarie" name="situation" value="salarie" />
+        <label for="salarie">Salarié en transition professionnelle</label><br>
+
+        <input type="checkbox" id="autre" name="situation" value="autre" />
+        <label for="autre">Autre</label><br>
+
+        <!--ici je souhaite un choix façon radio-->
+        <h3>Vos modalités d'apprentissage privilégiées :</h3>
+
+        <input type="radio" id="centre" name="apprentissage" value="en centre" />
+        <label for="centre">En centre de formation (présentiel)</label><br>
+
+        <input type="radio" id="distance" name="apprentissage" value="a distance" />
+        <label for="distance">100 % à distance</label><br>
+
+        <input type="radio" id="alternance" name="apprentissage" value="en alternance" />
+        <label for="alternance">En contrat d'alternance avec l'entreprise</label><br>
+
+        <input type="radio" id="sans-preference" name="apprentissage" value="sans-preference" checked="checked" />
+        <label for="sans-preference">Sans préférence</label><br>
+
+        <!--Menu déroulant-->
+        <label for="regions">Dans quelle région habitez-vous ?</label><br />
+        <select name="regions" id="regions">
+
+            <option value="auvergne-rhone-alpes">Auvergne-Rhône-Alpes</option>
+            <option value="bourgogne-franche-comte">Bourgogne-Franche-Comté</option>
+            <option value="bretagne">Bretagne</option>
+            <option value="centre-val-de-loire">Centre-Val de Loire</option>
+            <option value="corse">Corse</option>
+            <option value="grand-est">Grand Est</option>
+            <option value="hauts-de-france">Hauts-de-France</option>
+            <option value="ile-de-france">Île-de-France</option>
+            <option value="normandie">Normandie</option>
+            <option value="nouvelle-aquitaine">Nouvelle-Aquitaine</option>
+            <option value="occitanie">Occitanie</option>
+            <option value="pays-de-la-loire">Pays de la Loire</option>
+            <option value="provence-alpes-cote-d'azur">Provence-Alpes-Côte d'Azur</option>
+            <option value="outre-mer">Outre-mer</option>
+        </select>
+        <br>
+
+        <!--Zone de texte-->
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" rows="10" cols="50" maxlength="550"
+            placeholder="Votre message"></textarea><br>
+
+
+
+        <button type="submit" name="envoyer">Envoyer</button>
+        <button type="reset">Réinitialiser</button>
+
+
+    </form>
+
+    <p>*information obligatoire</p>
+    <footer>
+        <p><a href="https://www.afpa.fr/" target="_blank">Pourquoi choisir l'Afpa ?</a></p>
+    </footer>
+</body>
+
+</html>
