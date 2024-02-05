@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #78be21;
+}
+
+
+
+nav li a {
+    font-size: large;
+    font-weight: 800;
+
+}
+
+.container {
+    background-color: rgb(227, 223, 223);
+    height: 60vh;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 3%;
+    padding-top: 2%;
+}
+
+h2 {
+    text-align: center;
+    margin: 5%;
+}
+
+.container a {
+    text-align: center;
+
+}
+
+.btn {
+    background-color: #78be21;
+
+}
